@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+#icon-home:hover {
+   fill: #1072B9;
+}
+
+#icon-home {
+   fill: rgba(255, 255, 255, .5);
+   height: 32px;
+   width: 32px;
+}
+
+.bg {
+   background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=30');
+   background-repeat: repeat;
+   background-position: center;
+   background-size: cover;
+   position: absolute;
+   filter: blur(1.2px);
+   width: 100vw;
+   z-index: -1;
+   bottom: 0;
+   left: 0;
+   top: 0;
+}
+
+.gridLogin #form>div.none, .gridLogin #loading.none {
+   display: none;
+}
+
+.bg1 {
+   background-color: #1072B9;
+   position: absolute;
+   content: " ";
+   opacity: 0.4;
+   width: 100vw;
+   z-index: -1;
+   bottom: 0;
+   left: 0;
+   top: 0;
+}
+
+.gridLogin {
+   justify-content: center;
+   align-content: center;
+   margin: 0 auto;
+   display: grid;
+   height: 100vh;
+   width: 100vw;
+   z-index: 999;
+}
+
+.gridLogin #form {
+   box-shadow: 0px 0px 5px 3px lightgray;
+   background-color: #ffffff;
+   border-radius: 5px;
+   margin-top: -100px;
+   width: 500px;
+}
+
+.gridLogin #loading {
+   box-shadow: 0px 0px 5px 3px lightgray;
+   background-color: #ffffff;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   margin-top: -100px;
+   display: flex;
+   height: 255px;
+   width: 500px;
+}
+
+.gridLogin #form h3 {
+   border-bottom: 1px solid lightgray;
+   background-color: #1072B950;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+   text-align: center;
+   font-weight: bold;
+   color: #1072B9;
+   padding: 5px 0;
+}
+
+.gridLogin button.float {
+   float: right;
+}
+
+.gridLogin button.float:last-child {
+   background-color: #1072B9;
+}
+
+.clearfix button.float {
+   margin-bottom: 10px;
+}
+
+.gridLogin .form-group {
+   padding: 0 10px;
+}
+
+nav.navbar {
+   position: sticky;
+   margin-bottom: 50px;
+   padding-bottom: 0;
+   padding-top: 0;
+   z-index: 99;
+   top: 0;
+}
+
+nav.navbar a {
+   border-bottom: 3px solid #343a40;
+   background-color: unset;
+   text-decoration: none;
+   font-size: 1.4em;
+   color: white;
+   margin: 0 5px;
+}
+
+.nav-item.float {
+   position: absolute;
+   float: right;
+   right: 0;
+}
+
+nav.navbar a:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+   border-bottom: 3px solid #1072B9;
+   color: #1072B9 !important;
+}
+
+.container {
+   box-shadow: 0px 0px 4px 2px lightgray;
+   background-color: #eeeeee;
+   border-radius: 5px;
+}
+
+.container h3 {
+   border-bottom: 1px solid lightgray;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 25px;
+   font-weight: bold;
+   color: #1072B9;
+   display: flex;
+}
+
+.container nav {
+   justify-content: center;
+   align-self: center;
+   display: flex;
+}
+
+.container button {
+   font-size: 1.2rem;
+}
+
+.container button i {
+   font-size: 1.2rem;
+}
+
+.grid {
+   grid-template-columns: auto auto auto;
+   grid-gap: 25px;
+   display: grid;
+   padding: 25px;
+}
+
+.grid .card {
+   box-shadow: 0px 0px 5px 3px lightgray;
+   min-width: 250px;
+}
+
+.grid .card:hover {
+   box-shadow: 0px 0px 5px 4px #bbbbbb;
+}
+
+.card h5 {
+   justify-content: space-evenly;
+   align-items: center;
+   display: flex;
+}
+
+.card h5 span {
+   font-style: italic;
+   text-align: end;
+}
+
+.card p {
+   font-size: 12px;
+}
+
+.container .card button.float {
+   float: right;
+   margin-bottom: 0;
+}
+
+.container .card button.float:hover {
+   background-color: #0c4167;
+   border-color: #0c4167;
+}
+
+.card .card-title {
+   border-bottom: 1px solid lightgray;
+   padding-bottom: 5px;
+   padding-top: 5px;
+   margin-bottom: 0;
+}
+
+.card .card-body {
+   padding-top: 0.6rem;
+   background-color: #eeeeee;
+}
+
+.card .card-text {
+   border-bottom: 1px solid lightgray;
+   padding-bottom: 5px;
+   margin-bottom: 5px;
+}
+
+.card span.resto {
+   background-color: red;
+   border-radius: 5px;
+   font-weight: bold;
+   color: white;
+   padding: 5px;
+}
+
+.card .photo-profile {
+   text-align: center;
+}
+
+.card .photo-profile i {
+   font-size: 8rem;
+}
+
+.container button.float {
+   float: right;
+}
+
+.container button.float:last-child {
+   background-color: #1072B9;
+}
+
+.container button.float:hover:last-child {
+   background-color: #0c4167;
+   border-color: #0c4167;
+}
+
+#table tr th:last-child {
+   text-align: center;
+}
+
+#table .options {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#table .options button i {
+   font-size: 1em;
+   color: white;
+}
+
+footer {
+   background-color: #343a40;
+   justify-content: center;
+   position: absolute;
+   color: white;
+   position: fixed;
+   display: flex;
+   padding: 10px;
+   width: 100vw;
+   bottom: 0;
+}
+
+footer p, footer span {
+   background-color: unset;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+footer p span {
+   font-style: italic;
+}
+
+footer p span:last-child {
+   font-weight: bold;
+}
